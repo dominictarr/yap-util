@@ -261,10 +261,7 @@ exports.createQuery = function (opts, options) {
     query: [{
       $filter: {
         value: {
-          content: {
-            type: 'post',
-            channel: opts.channel,
-          },
+          content: opts.channel ? {channel: opts.channel} : {type: 'post'},
           author: opts.author,
           private: opts.private ? true : {$is: 'undefined'},
           timestamp: cleanRange(opts),
@@ -275,4 +272,7 @@ exports.createQuery = function (opts, options) {
     reverse: hasRange(opts, 'gt') || hasRange(opts, 'gte') ? false : true
   }
 }
+
+
+
 
