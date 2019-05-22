@@ -1,0 +1,27 @@
+{
+  "name": "yap-util",
+  "description": "",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dominictarr/yap-util",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/yap-util.git"
+  },
+  "dependencies": {
+    "cont": "^1.0.3",
+    "html-escape": "^2.0.0",
+    "hyperscript": "^2.0.2",
+    "libnested": "^1.4.1",
+    "pull-paramap": "^1.2.2",
+    "pull-stream": "^3.6.11",
+    "qs": "^6.7.0",
+    "ssb-markdown": "^4.1.1",
+    "ssb-ref": "^2.13.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "author": "Dominic Tarr @EMovhfIrFk4NihAKnRNhrfRaqIhBv1Wj8pTxJNgvCCY=.ed25519)",
+  "license": "MIT"
+}
