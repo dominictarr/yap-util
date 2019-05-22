@@ -5,7 +5,7 @@
   "homepage": "https://github.com/dominictarr/yap-util",
   "repository": {
     "type": "git",
-    "url": "git://github.com/dominictarr/yap-util.git"
+    "url": "ssb://%EAhTOiXptdxtLURHyQDoBpfguQF6xC5bvKIlpmxEcsA=.sha256"
   },
   "dependencies": {
     "cont": "^1.0.3",
