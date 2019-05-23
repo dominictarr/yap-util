@@ -256,22 +256,24 @@ function cleanRange (_o) {
   return o
 }
 
-exports.createQuery = function (opts, options) {
+exports.createQuery = function (opts, defaults) {
+  defaults = Object.assign({type: 'post', limit: 20}, defaults || {})
   return {
     query: [{
       $filter: {
         value: {
-          content: opts.channel ? {channel: opts.channel} : {type: 'post'},
+          content: opts.channel ? {channel: opts.channel} : {type: opts.type || defaults.type},
           author: opts.author,
           private: opts.private ? true : {$is: 'undefined'},
           timestamp: cleanRange(opts),
         },
       }
     }],
-    limit: options.limit || 20,
+    limit: opts.limit || defaults.limit,
     reverse: hasRange(opts, 'gt') || hasRange(opts, 'gte') ? false : true
   }
 }
+
 
 
 
