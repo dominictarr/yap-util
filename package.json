@@ -15,7 +15,7 @@
     "pull-paramap": "^1.2.2",
     "pull-stream": "^3.6.11",
     "qs": "^6.7.0",
-    "ssb-markdown": "^4.1.1",
+    "ssb-markdown": "3",
     "ssb-ref": "^2.13.9"
   },
   "devDependencies": {},
